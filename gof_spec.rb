@@ -31,7 +31,9 @@ class World
     @cells.each_with_index do |row, x_index|
       row.each_with_index do |_, y_index|
         alive_neighbours = total_live_neighbours(x_index, y_index)
-        @next_world.set_alive([ x_index, y_index ]) if (@cells[x_index][y_index] == 1 && (alive_neighbours == 2 || alive_neighbours == 3)) || alive_neighbours == 3
+        if (@cells[x_index][y_index] == 1 && alive_neighbours == 2) || alive_neighbours == 3
+          @next_world.set_alive([ x_index, y_index ]) 
+        end
       end
     end
 
