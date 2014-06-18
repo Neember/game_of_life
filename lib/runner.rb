@@ -1,4 +1,4 @@
-require_relative 'gof_spec'
+require_relative 'gof'
 require 'awesome_print'
 require 'curses'
 include Curses
