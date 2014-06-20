@@ -2,9 +2,21 @@ GEM
   remote: https://rubygems.org/
   specs:
     awesome_print (1.2.0)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     coderay (1.1.0)
+    columnize (0.8.9)
+    coolline (0.4.3)
     curses (1.0.1)
+    debug_inspector (0.0.2)
+    debugger (1.6.8)
+      columnize (>= 0.3.1)
+      debugger-linecache (~> 1.2.0)
+      debugger-ruby_core_source (~> 1.3.5)
+    debugger-linecache (1.2.0)
+    debugger-ruby_core_source (1.3.5)
     diff-lcs (1.2.5)
+    interception (0.5)
     method_source (0.8.2)
     nyan-cat-formatter (0.5.2)
       rspec (>= 2.13)
@@ -12,6 +24,20 @@ GEM
       coderay (~> 1.0)
       method_source (~> 0.8)
       slop (~> 3.4)
+    pry-coolline (0.2.4)
+      coolline (~> 0.3)
+    pry-debugger (0.2.2)
+      debugger (~> 1.3)
+      pry (~> 0.9.10)
+    pry-doc (0.6.0)
+      pry (~> 0.9)
+      yard (~> 0.8)
+    pry-rescue (1.4.1)
+      interception (>= 0.5)
+      pry
+    pry-stack_explorer (0.4.9.1)
+      binding_of_caller (>= 0.7)
+      pry (>= 0.9.11)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -21,6 +47,7 @@ GEM
       diff-lcs (>= 1.1.3, < 2.0)
     rspec-mocks (2.14.6)
     slop (3.4.7)
+    yard (0.8.7.4)
 
 PLATFORMS
   ruby
@@ -30,4 +57,9 @@ DEPENDENCIES
   curses
   nyan-cat-formatter
   pry
+  pry-coolline
+  pry-debugger
+  pry-doc
+  pry-rescue
+  pry-stack_explorer
   rspec
