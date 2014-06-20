@@ -33,7 +33,7 @@ describe 'Game of Life' do
     context 'Any live cell with fewer than two live neighbours dies, as if caused by underpopulation' do
       it 'should return an empty world for *..' do
         world = World.new(1,3)
-        world.set_alive(0,0)
+        world.set_alive([0,0])
         world = world.tick
         world.cells.should == [[0,0,0]]
       end

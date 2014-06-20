@@ -6,8 +6,8 @@ class World
   end
 
   def set_alive(*array_of_live_cells)
-    array_of_live_cells.each do |location|
-      @cells[location[0]][location[1]] = 1
+    array_of_live_cells.each do |x, y|
+      @cells[x][y] = 1
     end
   end
 
